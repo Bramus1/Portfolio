@@ -22,7 +22,6 @@ android:icon="@mipmap/ic_launcher">
 <!-- <service
         android:name="com.pravera.flutter_foreground_task.service.ForegroundTaskService"
         android:exported="false" /> -->
-<!-- meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDazuXWS9nLvuhC5DJpyMZ3e1NvXYtZz4s"/--> <!--  This key is used when communicating with Google Maps for geocoding and other services.  -->
 <activity
 android:name=".MainActivity" 
 android:exported="true" 
