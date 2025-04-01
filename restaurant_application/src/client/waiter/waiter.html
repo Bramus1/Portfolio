@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiter Interface</title>
+    <link rel="stylesheet" href="/../css/style.css">
+</head>
+<body>
+    <!-- Waiter Section -->
+    <section id="waiterSection">
+        <h2>Waiter Interface</h2>
+
+        <!-- Place an Order -->
+        <section id="placeOrderSection">
+            <h3>Place an Order</h3>
+            <form id="orderForm" onsubmit="return false;">
+                <label for="tableNumber">Table Number:</label>
+                <input type="number" id="tableNumber" required min="1">
+
+                <div id="menuItemsContainer">
+                    <!-- Menu items will be dynamically loaded here with quantity inputs and add buttons -->
+                </div>
+
+                <h4>Current Order</h4>
+                <div id="addedItemsContainer">
+                    <!-- Current order items will be dynamically displayed here -->
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <!-- Current Orders -->
+        <section id="currentOrdersSection">
+            <h3>Current Orders</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>User ID</th>
+                        <th>Dish(es)</th>
+                        <th>Table Number</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTable">
+                    <!-- Orders will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <div id="notificationsContainer" class="notifications"></div>
+
+
+    <script src="waiter.js"></script>
+</body>
+</html>

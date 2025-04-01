@@ -1,0 +1,4 @@
+g++
+libsqlite3-dev
+libpoco-dev
+doxygen

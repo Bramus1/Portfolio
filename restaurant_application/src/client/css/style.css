@@ -1,0 +1,176 @@
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #444;
+}
+
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2, h3, h4 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table thead {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: auto;
+    margin-top: 10px;
+}
+
+.notifications {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.notification-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+.menu-item {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 10px; 
+    width: auto; 
+}
+
+.menu-item-details {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+}
+
+.menu-item-name {
+    font-weight: bold;
+}
+
+.menu-item-price {
+    color: green;
+}
+
+.menu-item-actions {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.menu-item-quantity {
+    width: 60px;
+    padding: 5px;
+}
+
+.add-to-order-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-order-button:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

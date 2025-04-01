@@ -1,0 +1,17 @@
+# Ignore build and binary files
+build/
+bin/
+
+# OS-specific files
+*.DS_Store
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Temporary files
+*.o
+*.out
+
+# Windows files 
+*.exe

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CellUserOptions>
+  <Controller Name="Controller1">
+    <Application>Disk://Exam_2025_59333/Exam_2025_59333.pjx</Application>
+  </Controller>
+  <Option Name="DataTreeView">
+    <Nodes>
+      <Node Path="Examan_2025_59333" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\bool" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\jointRx" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\mdesc" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\num" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\pointRx" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\tool" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\trsf" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="CellExplorer">
+    <Nodes>
+      <Node Path="Examan_2025_59333" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx" IsExpanded="true" />
+      <Node Path="Examan_2025_59333\Controller1\Disk:##Exam_2025_59333#Exam_2025_59333.pjx\Empilement" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="GeometryView" />
+  <Option Name="Breakpoints">
+    <Breakpoints />
+  </Option>
+  <Option Name="IOsControlPanel">
+    <Ios />
+  </Option>
+  <Option Name="Watches">
+    <Watches />
+  </Option>
+  <Option Name="ExpressionWatches">
+    <ExpressionWatches />
+  </Option>
+  <Option Name="3DView">
+    <_3DView Visible="true" />
+  </Option>
+  <Option Name="SynchronizerMode">
+    <Synchronizers>
+      <Synchronizer Controller="Controller1" Mode="Emulator" />
+    </Synchronizers>
+  </Option>
+  <Option Name="Safety">
+    <Safeties />
+  </Option>
+</CellUserOptions>

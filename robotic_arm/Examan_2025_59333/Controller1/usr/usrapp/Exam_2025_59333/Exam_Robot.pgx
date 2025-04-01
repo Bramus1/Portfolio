@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="Exam_Robot" access="private" >
+    <Locals>
+      <Local name="l_LigneCurrant" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+
+  call Empilement()
+
+
+
+end]]></Code>
+  </Program>
+</Programs>

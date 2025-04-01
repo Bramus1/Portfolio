@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="Empilement">
+    <Locals>
+      <Local name="l_pPoint" type="point" xsi:type="array" size="1" />
+      <Local name="l_pPoint1" type="point" xsi:type="array" size="1" />
+      <Local name="l_CurrentLigne" type="num" xsi:type="array" size="1" />
+      <Local name="l_CurrentPiece" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  
+  for l_CurrentLigne=0 to nLigne -1
+    nDebut=clock()
+    for l_CurrentPiece=0 to nPieceLigne -1
+      trDecalPiece={l_CurrentLigne*nDistanceLigne,l_CurrentPiece*nDistancePiece,0,0,0,0}
+      trDecalHauteur={l_CurrentLigne*nDistanceLigne,300,l_CurrentPiece*nHauteurPiece,0,0,0}
+      l_pPoint=compose(pP1,world,trDecalPiece)
+      l_pPoint1=compose(pP1,world,trDecalHauteur)
+      call Prise(l_pPoint)
+      call Pause(l_pPoint1)
+    endFor
+    nFin=clock()
+    put("current ligne ")
+    putln(l_CurrentLigne+1)
+    put( " : " )
+    putln( nFin-nDebut)
+    put(" s")
+    delay(2)
+  endFor
+  movej(jDepart,tPince,mRapide)
+  
+  
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/../css/style.css">
+</head>
+<body>
+    <!-- Admin Panel Header -->
+    <header>
+        <h1>Admin Panel</h1>
+        <button id="logoutButton">Logout</button>
+    </header>
+
+    
+    <section id="userManagementSection">
+        <h3>User Management</h3>
+        <button id="addUserButton">Add User</button>
+
+        
+        
+        <div id="addUserForm" style="display: none;">
+            <h4>Create New User</h4>
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" placeholder="Enter username"><br>
+            
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" placeholder="Enter password"><br>
+            
+            <label for="newRoleId">Role ID:</label>
+            <select id="newRoleId" required>
+                <option value="0">Waiter</option>
+                <option value="1">Bar</option>
+                <option value="2">Admin</option>
+                <option value="3">Kitchen</option>
+            </select>
+            
+            <button id="saveNewUserButton">Save User</button>
+            <button id="cancelAddUserButton">Cancel</button>
+        </div>
+    
+
+
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    
+    <section id="menuManagementSection">
+        <h3>Manage Menu</h3>
+        <button id="addMenuItemButton">Add New Menu Item</button>
+        <div id="addMenuForm" style="display: none;">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" required>
+            <label for="itemPrice">Item Price:</label>
+            <input type="number" id="itemPrice" required>
+            <label for="itemType">Item Type:</label>
+            <select id="itemType" required>
+                <option value="f">Food</option>
+                <option value="D">Drink</option>
+            </select>
+            <button id="saveMenuItemButton">Save</button>
+        </div>
+        
+        <table id="menuItemsTable">
+            <thead>
+                <tr>
+                    <th>Dish ID</th>
+                    <th>Dish Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    
+    <section id="inventoryManagementSection">
+        <h3>Inventory Management</h3>
+        <button id="addInventoryButton">Add Inventory Item</button>
+    
+        <div id="addInventoryForm" style="display: none;">
+            <h4>Add Inventory Item</h4>
+            <label for="inventoryName">Item Name:</label>
+            <input type="text" id="inventoryName" required>
+            <label for="inventoryQuantity">Quantity:</label>
+            <input type="number" id="inventoryQuantity" required>
+            <label for="inventoryUnit">Unit:</label>
+            <input type="text" id="inventoryUnit" required>
+            <label for="inventoryMinRequired">Min Required:</label>
+            <input type="number" id="inventoryMinRequired" required>
+            <button id="saveInventoryButton">Save</button>
+            <button id="cancelAddInventoryButton">Cancel</button>
+        </div>
+
+        
+    
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Inventory ID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Min Required</th>
+                    <th>Last Updated</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="editInventoryForm" style="display: none;">
+            <h4>Edit Inventory Item</h4>
+            <label for="editInventoryName">Item Name:</label>
+            <input type="text" id="editInventoryName" required>
+            <label for="editInventoryQuantity">Quantity:</label>
+            <input type="number" id="editInventoryQuantity" required>
+            <label for="editInventoryUnit">Unit:</label>
+            <input type="text" id="editInventoryUnit" required>
+            <label for="editInventoryMinRequired">Min Required:</label>
+            <input type="number" id="editInventoryMinRequired" required>
+            <button id="saveEditInventoryButton">Save</button>
+            <button id="cancelEditInventoryButton" onclick="document.getElementById('editInventoryForm').style.display = 'none';">Cancel</button>
+        </div>
+        
+        
+        
+    </section>
+
+
+    <section id="orderHistorySection">
+        <h3>Order History</h3>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate">
+        <button id="viewOrderHistoryButton">View History</button>
+        <button id="generateRevenueButton">Generate Revenue</button>
+        <div id="revenueDisplay"></div>
+        <table id="orderHistoryTable">
+            <thead>
+                <tr>
+                    <th>History ID</th>
+                    <th>Commande ID</th>
+                    <th>User ID</th>
+                    <th>Table Number</th>
+                    <th>Status</th>
+                    <th>Sub Total</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    
+    
+
+    <script src="admin_panel.js"></script>
+</body>
+</html>

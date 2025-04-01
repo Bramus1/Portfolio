@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="Prise" access="private" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_pPoint" type="point" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  movej(appro(x_pPoint,trAppro),tPince,mRapide)
+  open(tPince)
+  movel(x_pPoint,tPince,mLent)
+  close(tPince)
+  movel(appro(x_pPoint,trAppro),tPince,mLent)
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+        {% if form.captcha.errors %}
+            <div class="captcha-error">
+                <p>{{ form.captcha.errors.0 }}</p>
+            </div>
+        {% endif %}
+    <input type="hidden" name="next" value="{{ next }}">
+    <label>
+        <input type="checkbox" name="remember_me"> Remember Me
+    </label>
+    <button type="submit">Login</button>
+    </form>
+</body>
+</html>

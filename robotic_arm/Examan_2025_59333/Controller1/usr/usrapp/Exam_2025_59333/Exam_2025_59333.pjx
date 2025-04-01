@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3" >
+  <Parameters version="s7.11.2" stackSize="5000" millimeterUnit="true" />
+  <Programs>
+    <Program file="Empilement.pgx" />
+    <Program file="Exam_Robot.pgx" />
+    <Program file="Initialisation.pgx" />
+    <Program file="Pause.pgx" />
+    <Program file="Prise.pgx" />
+    <Program file="start.pgx" />
+    <Program file="stop.pgx" />
+  </Programs>
+  <Database>
+    <Data file="Exam_2025_59333.dtx" />
+  </Database>
+  <Libraries>
+  </Libraries>
+  <Types>
+  </Types>
+</Project>

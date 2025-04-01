@@ -1,0 +1,51 @@
+﻿{
+  "programs": [
+    {
+      "mode": 3,
+      "name": "start",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "Prise",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "Pause",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "Initialisation",
+      "nodes": [
+        {
+          "start": 32,
+          "end": 207,
+          "isCollapsed": false
+        }
+      ]
+    },
+    {
+      "mode": 3,
+      "name": "Exam_Robot",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "Empilement",
+      "nodes": [
+        {
+          "start": 11,
+          "end": 598,
+          "isCollapsed": false
+        },
+        {
+          "start": 68,
+          "end": 450,
+          "isCollapsed": false
+        }
+      ]
+    }
+  ]
+}

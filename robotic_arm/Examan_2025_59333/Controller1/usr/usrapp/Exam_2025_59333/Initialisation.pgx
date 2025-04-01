@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="Initialisation" access="private" >
+    <Code><![CDATA[begin
+  cls()
+  resetMotion()
+  if bDCY==true
+    movej(jDepart,tPince,mRapide)
+    userPage()
+    put("enter the number of lignes : ")
+    get(nLigne)
+    taskCreate "Examan_Robot",100,Exam_Robot()
+  endIf
+end]]></Code>
+  </Program>
+</Programs>
