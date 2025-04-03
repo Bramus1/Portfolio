@@ -1,6 +1,0 @@
-cryptography
-Fernet
-django
-django-otp
-django-sslserver-v2
-django-recaptcha
